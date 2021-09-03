@@ -33,9 +33,11 @@ console.log(vehicleModels.length);
 console.log(vehicleManufacturer[vehicleManufacturer.length - 1]);
 
 //Lägga till något i en lista...
+//Lägg till sist i listan
 vehicleManufacturer.push('Volkswagen');
 console.log(vehicleManufacturer);
 
+//Lägg till först i listan
 vehicleModels.unshift('Tiguan');
 console.log(vehicleModels);
 
