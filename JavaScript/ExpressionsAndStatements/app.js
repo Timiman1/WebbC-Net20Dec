@@ -53,18 +53,18 @@ console.log(regNumber + 'XY');
 console.log(String(regNumber) + 'XY');*/
 
 //Type Coercion = Implicit = Automatisk översättning
-console.log('Min hund är ' + 6 + ' år gammal');
+//console.log('Min hund är ' + 6 + ' år gammal');
 
 //Type Conversion = Explicit = Manuell översättning
-console.log('Min hund är ' + String(6) + ' år gammal');
+//console.log('Min hund är ' + String(6) + ' år gammal');
 
-let x = '1' + 1;
-console.log(x);
-x = x - 1; //'11' -> 11 - 1
-console.log(x);
+// let x = '1' + 1;
+// console.log(x);
+// x = x - 1; //'11' -> 11 - 1
+// console.log(x);
 
-let y = '10' - '2' - 3 + '5'; // '10' -> 10 - '2' -> 2 = 8 - 3 = 5 + '5' = '55'
-console.log(y);
+// let y = '10' - '2' - 3 + '5'; // '10' -> 10 - '2' -> 2 = 8 - 3 = 5 + '5' = '55'
+// console.log(y);
 
 // const z = prompt('Ange ett värde'); //ALLTID RETURNERAR EN STRÄNG OAVSETT VÄRDE
 // console.log(z);
@@ -80,13 +80,70 @@ console.log(y);
 */
 
 //Falsy values...
+/*
 console.log(Boolean(0));
 console.log(Boolean(''));
 console.log(Boolean(undefined));
 console.log(Boolean(null));
 console.log(Boolean(NaN));
+*/
 
 //Truthy values...
+/*
 console.log(Boolean(1));
 console.log(Boolean('Kalle'));
 console.log(Boolean({})); //Ett tomt JavaScript objekt..
+*/
+
+/* JÄMFÖRELSE OPERATORER */
+/* Jämförelse operatorn i JavaScript har vi två stycken */
+// == (loose) JavaScript nu använder sig av Coercion för att jämföra.
+// === (strict) Då använder inte JavaScript sig av Coercion.
+
+/*
+const modelYear = '2015';
+
+if (modelYear === 2015) {
+  console.log('loose comparison', modelYear);
+} else {
+  console.log('strict comparison', modelYear);
+}
+
+console.log(modelYear, typeof modelYear);
+*/
+
+/* SWITCH I JAVASCRIPT */
+/* const day = 'sunday';
+
+switch (day) {
+  case 'monday':
+    console.log('Sprint möte med gruppen');
+    break;
+  case 'tuesday':
+  case 'wednesday':
+    console.log('Skriver kod');
+    break;
+  case 'thursday':
+    console.log('Möte med utvecklarna');
+    break;
+  case 'friday':
+    console.log('Varvar ner inför helgen😁');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Nu tar vi det lugnt');
+    break;
+}
+*/
+
+/* Strict Mode */
+//Att tvinga oss att skriva bättre och säkrare kod...
+//Deklareras högst upp i JavaScript filen...
+//'use strict';
+
+/* TERNARY OPERATOR I JAVASCRIPT */
+//One-line if och else
+const time = 23;
+time >= 23
+  ? console.log('Det är läggdags!')
+  : console.log('Du får vara vaken!');
