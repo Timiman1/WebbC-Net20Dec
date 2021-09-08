@@ -52,3 +52,36 @@ const car = {
   description:
     'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam commodo venenatis rhoncus. Vivamus id lacus id elit tristique vulputate. Donec ut diam vitae ligula mollis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras tempor sed elit nec pretium. In accumsan odio id est vehicula tincidunt. Aliquam tincidunt risus nec tellus auctor, eget gravida purus efficitur.',
 };
+/*
+//Destructuring object.
+//Bara plocka ut de egenskaper som är intressanta...
+const {
+  registrationNo: regNumber,
+  make: tillverkare,
+  model: modell,
+  mileage,
+} = car;
+console.log(regNumber, tillverkare, modell, mileage);
+*/
+
+/* SPREAD OPERATOR... */
+/*
+const spreadArray = [5, 6, 7, 8, 9, 10];
+
+console.log(spreadArray);
+//Dåligt sätt
+const badWay = [1, 2, 3, spreadArray[0], spreadArray[1]];
+console.log(badWay);
+
+//Bra sätt
+const goodWay = [1, 2, 3, ...spreadArray];
+console.log(goodWay);
+
+//Kopiera en array
+const copyOfArr = [...spreadArray];
+console.log(copyOfArr);
+
+//Kopiera objekt
+const copyOfCar = { ...car };
+console.log(copyOfCar);
+*/
