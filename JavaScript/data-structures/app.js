@@ -157,7 +157,7 @@ console.log(modelsArray);
 
 /* MAPS */
 //Kan liknas vid Dictionaries. Nyckel(key) och värde(value) par.
-const vehicleUsage = new Map();
+/*const vehicleUsage = new Map();
 vehicleUsage.set('N', 'Normal Use');
 vehicleUsage.set('RC', 'Rental Car');
 vehicleUsage.set('T', 'Taxi');
@@ -166,3 +166,15 @@ vehicleUsage.set('D', 'Driving School');
 console.log(vehicleUsage);
 
 console.log(vehicleUsage.get('RC'));
+
+console.log([...vehicleUsage]);
+console.log(vehicleUsage.entries());
+console.log(vehicleUsage.keys());
+console.log(vehicleUsage.values());
+console.log([...vehicleUsage.keys()]);
+console.log([...vehicleUsage.values()]);
+
+for (let [key, value] of vehicleUsage) {
+  console.log(key, value);
+}
+*/
