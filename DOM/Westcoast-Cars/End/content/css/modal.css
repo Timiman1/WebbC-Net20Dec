@@ -1,0 +1,56 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  width: 100%;
+  background-color: #f3f3f3;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-container {
+  margin: 2rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .modal {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .modal {
+    max-width: 30rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .modal {
+    max-width: 40rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .modal {
+    max-width: 50rem;
+  }
+}
