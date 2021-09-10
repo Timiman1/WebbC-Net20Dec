@@ -1,7 +1,7 @@
 const contactUsBtn = document.querySelector('.btn');
 
 contactUsBtn.addEventListener('click', () => {
-  openModal(generateHtml());
+  openModal(generateHtml(), '400px');
 });
 
 function generateHtml() {

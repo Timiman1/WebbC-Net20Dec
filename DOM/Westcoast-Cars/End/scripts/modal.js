@@ -8,7 +8,10 @@ const closeDialog = document.querySelector('.close-modal');
 closeDialog.addEventListener('click', closeModal);
 
 //Funktion för att skapa upp den modala dialogrutan.
-function openModal(html) {
+function openModal(html, width = undefined) {
+  if (width != undefined) {
+    modalDialog.style.width = width;
+  }
   const dialog = modalDialog.querySelector('.modal-container');
   dialog.innerHTML = html;
 
